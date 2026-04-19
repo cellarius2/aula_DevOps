@@ -1,12 +1,32 @@
-from fastapi import FastAPI
+def filtrar_ciencia_dados(lista):
+    resultado = []
 
-app = FastAPI()
+    for pessoa in lista:
+        if pessoa["area"] == "Ciência de Dados":
+            resultado.append(pessoa["nome"])
 
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
+    return resultado
 
-#http://127.0.0.1:8000/teste1
-@app.get("/teste")
-async def test():
-    return {"Status:": "Completo"}
+
+participantes = [
+    {"nome": "Ana", "area": "BI"},
+    {"nome": "Bruna", "area": "Ciência de Dados"},
+    {"nome": "Carla", "area": "BI"},
+    {"nome": "Daniela", "area": "Engenharia de Dados"},
+    {"nome": "Eduarda", "area": "BI"},
+    {"nome": "Fernanda", "area": "Ciência de Dados"},
+    {"nome": "Gabriela", "area": "BI"},
+    {"nome": "Helena", "area": "Engenharia de Dados"},
+    {"nome": "Isabela", "area": "BI"},
+    {"nome": "Juliana", "area": "Ciência de Dados"},
+    {"nome": "Karina", "area": "BI"},
+    {"nome": "Larissa", "area": "Engenharia de Dados"}
+]
+
+resultado = filtrar_ciencia_dados(participantes)
+
+print("Participantes interessadas em Ciência de Dados:")
+for nome in resultado:
+    print("-", nome)
+
+print(f"\nTotal: {len(resultado)} participantes")

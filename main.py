@@ -1,3 +1,5 @@
+from tabulate import tabulate
+
 def filtrar_ciencia_dados(lista):
     resultado = []
 
@@ -25,8 +27,8 @@ participantes = [
 
 resultado = filtrar_ciencia_dados(participantes)
 
-print("Participantes interessadas em Ciência de Dados:")
-for nome in resultado:
-    print("-", nome)
+tabela = [[nome] for nome in resultado]
+print(tabulate(tabela, headers=["Participantes Interessadas em Ciência de Dados"], tablefmt="grid"))
 
 print(f"\nTotal: {len(resultado)} participantes")
+

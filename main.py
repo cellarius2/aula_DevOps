@@ -18,7 +18,7 @@ participantes = [
     {"nome": "Eduarda", "area": "BI"},
     {"nome": "Fernanda", "area": "Ciência de Dados"},
     {"nome": "Gabriela", "area": "BI"},
-    {"nome": "Helena", "area": "Engenharia de Dados"},
+    {"nome": "Elena", "area": "Engenharia de Dados"},
     {"nome": "Isabela", "area": "BI"},
     {"nome": "Juliana", "area": "Ciência de Dados"},
     {"nome": "Karina", "area": "BI"},

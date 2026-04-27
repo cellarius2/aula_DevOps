@@ -20,7 +20,7 @@ participantes = [
     {"nome": "Gabriele", "area": "BI"},
     {"nome": "Elena", "area": "Engenharia de Dados"},
     {"nome": "Isabela", "area": "BI"},
-    {"nome": "Juliana", "area": "Ciência de Dados"},
+    {"nome": "Juliane", "area": "Ciência de Dados"},
     {"nome": "Karina", "area": "BI"},
     {"nome": "Larissa", "area": "Engenharia de Dados"}
 ]

@@ -39,7 +39,7 @@ jobs:
           python-version: '3.14'
       - name: Install dependencies
         run: |
-          pip install pytest pytest-cov
+          pip install pytest pytest-cov pytest-asyncio
           pytest tests.py --doctest-modules ...
       - name: Test with pytest
         run: |

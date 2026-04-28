@@ -42,8 +42,9 @@ jobs:
             pip install pytest pytest-cov pytest-asyncio
             pip install -r requirements.txt
         - name: Test with pytest
+          env:
+            PYTHONPATH: ${{ github.workspace }}
           run: |
-            PYTHONPATH=$GITHUB_WORKSPACE pytest test/test.py \  
             pytest test/test.py \
             --junitxml=junit/test-results.xml \
             --cov=src \

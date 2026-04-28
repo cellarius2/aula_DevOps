@@ -1,4 +1,4 @@
-from scr.main import *
+from src.main import *
 
 #Testa com dois valores corretos e um incorreto conforme resultado esperado
 def test_filtrar_ciencia_dados():

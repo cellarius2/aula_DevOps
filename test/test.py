@@ -9,7 +9,6 @@ def test_filtrar_ciencia_dados():
     ]
     assert filtrar_ciencia_dados(participantes) == ["Bruna", "Fernanda"]
 
-
 #Testa com o campo vazio
 def test_filtrar_lista_vazia():
     assert filtrar_ciencia_dados([]) == []
